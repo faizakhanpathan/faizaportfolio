@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaBriefcase, FaInstagram, FaYoutube, FaHandshake, FaSearch } from 'react-icons/fa';
-import CountUp from 'react-countup';
+import CountUpPkg from 'react-countup';
+const CountUp = (CountUpPkg as any).default || CountUpPkg;
 import { useInView } from 'react-intersection-observer';
 import { useScrollReveal, fadeUp, slideLeft, slideRight, staggerContainer } from '../hooks/useScrollReveal';
 import CTASection from '../components/sections/CTASection/CTASection';

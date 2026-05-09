@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaInstagram, FaYoutube, FaUsers, FaHandshake } from 'react-icons/fa';
-import CountUp from 'react-countup';
+import CountUpPkg from 'react-countup';
+const CountUp = (CountUpPkg as any).default || CountUpPkg;
+
 import { useInView } from 'react-intersection-observer';
 import { useScrollReveal, fadeUp, staggerContainer } from '../../../hooks/useScrollReveal';
 import './SocialPresenceSection.css';
