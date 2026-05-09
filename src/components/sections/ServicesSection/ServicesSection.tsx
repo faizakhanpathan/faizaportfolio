@@ -65,7 +65,7 @@ export default function ServicesSection() {
           </motion.div>
 
           <motion.div className="services-grid" variants={staggerContainer}>
-            {services.map(({ icon, title, desc, color }, i) => (
+            {services.map(({ icon, title, desc, color }) => (
               <motion.div
                 key={title}
                 className="service-card glass-card"
@@ -73,7 +73,7 @@ export default function ServicesSection() {
                 whileHover={{ y: -8, scale: 1.02 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
-                <div className="service-card__icon" style={{ '--icon-color': color }}>
+                <div className="service-card__icon" style={{ '--icon-color': color } as React.CSSProperties}>
                   {icon}
                   <div className="service-card__icon-glow" style={{ background: color }} />
                 </div>

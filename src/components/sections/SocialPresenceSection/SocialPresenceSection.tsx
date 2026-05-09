@@ -72,7 +72,7 @@ export default function SocialPresenceSection() {
 
           <motion.div className="social-grid" variants={staggerContainer}>
             {presenceCards.map((card) => (
-              <SocialCard key={card.platform} card={card} controls={controls} />
+              <SocialCard key={card.platform} card={card} />
             ))}
           </motion.div>
         </motion.div>
@@ -81,7 +81,7 @@ export default function SocialPresenceSection() {
   );
 }
 
-function SocialCard({ card }) {
+function SocialCard({ card }: { card: any }) {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (

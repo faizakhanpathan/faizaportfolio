@@ -86,7 +86,7 @@ const counters = [
   { value: 5, suffix: '+', label: 'Years Experience', icon: '📅' },
 ];
 
-function Counter({ value, suffix, label, icon }) {
+function Counter({ value, suffix, label, icon }: { value: number, suffix: string, label: string, icon: string }) {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.5 });
   return (
     <div ref={ref} className="exp-counter">
@@ -102,7 +102,6 @@ function Counter({ value, suffix, label, icon }) {
 export default function Experience() {
   const heroReveal = useScrollReveal(0.1);
   const timelineReveal = useScrollReveal(0.1);
-  const countersReveal = useScrollReveal(0.2);
 
   return (
     <div className="page-wrapper experience-page">

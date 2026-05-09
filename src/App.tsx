@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, Variants } from 'framer-motion';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
@@ -12,7 +12,7 @@ import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
 
-const pageVariants = {
+const pageVariants: Variants = {
   initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.4, 0, 0.2, 1] } },
   exit: { opacity: 0, y: -16, transition: { duration: 0.35 } },

@@ -90,7 +90,7 @@ export default function SkillsSection() {
   );
 }
 
-function SkillBar({ name, level, color, controls }) {
+function SkillBar({ name, level, color, controls }: { name: string, level: number, color: string, controls: any }) {
   return (
     <div className="skill-bar">
       <div className="skill-bar__header">

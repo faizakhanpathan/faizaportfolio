@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { FaInstagram, FaYoutube, FaLinkedinIn, FaEnvelope, FaHeart } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 import './Footer.css';
 
 const quickLinks = [
