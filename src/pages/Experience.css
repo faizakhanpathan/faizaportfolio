@@ -1,0 +1,243 @@
+.experience-page {
+  padding-top: 80px;
+}
+
+/* Hero */
+.exp-hero {
+  background: linear-gradient(135deg, #fff0f6 0%, #fff8f0 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-hero__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.exp-hero__blob--1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(249, 168, 201, 0.2);
+  top: -150px;
+  right: -80px;
+}
+
+.exp-hero__blob--2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 191, 138, 0.18);
+  bottom: -80px;
+  left: -60px;
+}
+
+.exp-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Counters */
+.exp-counters-section {
+  background: linear-gradient(135deg, #1a0a12, #2d1225);
+  padding: 60px 0;
+}
+
+.exp-counters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.exp-counter {
+  text-align: center;
+  padding: 32px 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(249, 168, 201, 0.15);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+}
+
+.exp-counter:hover {
+  background: rgba(249, 168, 201, 0.08);
+  border-color: rgba(249, 168, 201, 0.3);
+  transform: translateY(-4px);
+}
+
+.exp-counter__icon {
+  font-size: 2rem;
+}
+
+.exp-counter__value {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.exp-counter__label {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  font-weight: 500;
+}
+
+/* Timeline */
+.exp-timeline-section {
+  position: relative;
+}
+
+.exp-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+
+.exp-timeline::before {
+  content: '';
+  position: absolute;
+  left: 160px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--pink-200), var(--peach-300));
+  border-radius: 2px;
+}
+
+.exp-timeline-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.exp-timeline-item__period {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 28px;
+}
+
+.exp-timeline-item__period span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: right;
+  letter-spacing: 0.03em;
+}
+
+.exp-timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px currentColor;
+  flex-shrink: 0;
+}
+
+.exp-card {
+  padding: 28px 32px;
+}
+
+.exp-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.exp-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(249, 168, 201, 0.3);
+}
+
+.exp-card__role {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.exp-card__company {
+  font-size: 0.88rem;
+  color: var(--pink-600);
+  font-weight: 500;
+}
+
+.exp-card__achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-card__achievements li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.exp-card__bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .exp-counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exp-timeline::before {
+    left: 20px;
+  }
+
+  .exp-timeline-item {
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+
+  .exp-timeline-item__period {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 28px;
+    gap: 8px;
+  }
+
+  .exp-timeline-item__period span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-counters-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exp-card {
+    padding: 20px;
+  }
+}

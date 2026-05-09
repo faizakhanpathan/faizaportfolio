@@ -1,0 +1,92 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #fff0f6 0%, #fff8f0 50%, #ffe0ee 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Petal spinner */
+.loading-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  animation: spinSlow 3s linear infinite;
+}
+
+.loading-petal {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50% 50% 0 50%;
+  background: var(--gradient-btn);
+  opacity: 0.8;
+}
+
+.loading-petal:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.loading-petal:nth-child(2) { bottom: 0; left: 50%; transform: translateX(-50%) rotate(180deg); }
+.loading-petal:nth-child(3) { left: 0; top: 50%; transform: translateY(-50%) rotate(270deg); }
+.loading-petal:nth-child(4) { right: 0; top: 50%; transform: translateY(-50%) rotate(90deg); }
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading-logo {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.loading-dot {
+  color: var(--peach-400);
+  -webkit-text-fill-color: var(--peach-400);
+}
+
+.loading-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.loading-bar-container {
+  width: 160px;
+  height: 3px;
+  background: rgba(249, 168, 201, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.loading-bar {
+  height: 100%;
+  background: var(--gradient-btn);
+  border-radius: 3px;
+  animation: loadProgress 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes loadProgress {
+  0% { width: 0%; }
+  60% { width: 75%; }
+  100% { width: 100%; }
+}

@@ -1,0 +1,221 @@
+.footer {
+  background: linear-gradient(150deg, #1a0a12 0%, #2d1225 50%, #1a0f1a 100%);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 80px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.footer__glow--1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(249, 168, 201, 0.12);
+  top: -100px;
+  left: -100px;
+}
+
+.footer__glow--2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 191, 138, 0.1);
+  bottom: 0;
+  right: 10%;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+  gap: 48px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(249, 168, 201, 0.15);
+  position: relative;
+}
+
+/* Brand */
+.footer__logo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.footer__logo span {
+  color: var(--peach-400);
+  -webkit-text-fill-color: var(--peach-400);
+}
+
+.footer__tagline {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 24px;
+  max-width: 280px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(249, 168, 201, 0.1);
+  border: 1px solid rgba(249, 168, 201, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.footer__social:hover {
+  background: var(--gradient-btn);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(249, 168, 201, 0.35);
+}
+
+/* Columns */
+.footer__col-title {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pink-300);
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: all 0.25s ease;
+  position: relative;
+  padding-left: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__link:not(.footer__link--text)::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: var(--gradient-btn);
+  transition: width 0.3s ease;
+}
+
+.footer__link:not(.footer__link--text):hover {
+  color: var(--pink-300);
+  padding-left: 8px;
+}
+
+.footer__link:not(.footer__link--text):hover::before {
+  width: 12px;
+}
+
+.footer__link--text {
+  cursor: default;
+}
+
+.footer__link--text:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Contact */
+.footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer__contact-info p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.55);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__contact-info span {
+  font-size: 1rem;
+}
+
+.footer__cta {
+  font-size: 0.88rem;
+  padding: 10px 22px;
+}
+
+/* Bottom */
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__credit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__heart {
+  color: var(--pink-400);
+  font-size: 0.75rem;
+  animation: heartBeat 1.5s ease infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@media (max-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
