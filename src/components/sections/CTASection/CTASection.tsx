@@ -13,7 +13,7 @@ export default function CTASection() {
       <div className="cta-section__blob cta-section__blob--1" />
       <div className="cta-section__blob cta-section__blob--2" />
 
-      <div className="container">
+      <div className="cta-section__container">
         <motion.div
           ref={ref}
           className="cta-content"
