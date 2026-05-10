@@ -51,8 +51,6 @@ const presenceCards = [
 ];
 
 export default function SocialPresenceSection() {
-  const { ref, controls } = useScrollReveal(0.1);
-
   return (
     <section className="social-section section" id="social">
       {/* Decorative Background Elements */}
@@ -65,9 +63,9 @@ export default function SocialPresenceSection() {
 
       <div className="container">
         <motion.div
-          ref={ref}
           initial="hidden"
-          animate={controls}
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
           variants={staggerContainer}
           className="social-inner"
         >
@@ -84,7 +82,10 @@ export default function SocialPresenceSection() {
             <div className="section-divider-custom" />
           </motion.div>
 
-          <motion.div className="social-grid" variants={staggerContainer}>
+          <motion.div 
+            className="social-grid" 
+            variants={staggerContainer}
+          >
             {presenceCards.map((card) => (
               <SocialCard key={card.platform} card={card} />
             ))}
@@ -96,7 +97,7 @@ export default function SocialPresenceSection() {
 }
 
 function SocialCard({ card }: { card: any }) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
+  const [inViewRef, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -131,7 +132,6 @@ function SocialCard({ card }: { card: any }) {
 
   return (
     <motion.a
-      ref={ref}
       href={card.link}
       target={card.link.startsWith('http') ? '_blank' : '_self'}
       rel="noreferrer"
@@ -158,7 +158,7 @@ function SocialCard({ card }: { card: any }) {
       </div>
       
       <div className="social-card__body" style={{ transform: 'translateZ(15px)' }}>
-        <div className="social-card__stat">
+        <div className="social-card__stat" ref={inViewRef}>
           {inView ? (
             <CountUp
               end={parseInt(card.stat)}
