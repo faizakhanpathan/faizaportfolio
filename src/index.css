@@ -82,6 +82,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -90,6 +92,7 @@ body {
   color: var(--text-dark);
   line-height: 1.7;
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -395,12 +398,49 @@ h1, h2, h3, h4, h5 {
   }
 
   .section-title {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
+  :root {
+    --section-padding: 40px 0;
+  }
+
   .container {
     padding: 0 16px;
+  }
+
+  .section-tag {
+    padding: 6px 14px;
+    font-size: 0.72rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.88rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
   }
 }

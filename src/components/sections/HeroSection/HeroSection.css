@@ -391,9 +391,13 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .hero {
+    padding: 110px 0 60px;
+  }
+
   .hero__container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
     text-align: center;
   }
 
@@ -403,7 +407,7 @@
 
   .hero__visual {
     order: 1;
-    min-height: 380px;
+    min-height: 400px;
   }
 
   .hero__bio {
@@ -413,6 +417,7 @@
 
   .hero__actions {
     justify-content: center;
+    gap: 12px;
   }
 
   .hero__stats {
@@ -431,18 +436,43 @@
 
 @media (max-width: 600px) {
   .hero {
-    padding: 110px 0 80px;
+    padding: 100px 0 60px;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
   }
 
   .hero__badge {
-    padding: 8px 12px;
+    padding: 6px 12px;
+    transform: scale(0.9);
   }
 
+  .hero__badge--seo-expert { top: 20px; left: -10px; }
   .hero__badge--content-creator { right: -10px; }
-  .hero__play-btn { right: -10px; }
+  .hero__badge--brand-strategist { bottom: 60px; left: -10px; }
+  .hero__play-btn { 
+    right: 50%; 
+    transform: translateX(50%) scale(0.9); 
+    bottom: -10px;
+    white-space: nowrap;
+  }
+  .hero__play-btn:hover {
+    transform: translateX(50%) translateY(-3px) scale(0.9);
+  }
 
   .hero__stats {
-    gap: 20px;
-    padding: 18px 20px;
+    gap: 16px;
+    padding: 14px 16px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .hero__stat-value {
+    font-size: 1.4rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
   }
 }
