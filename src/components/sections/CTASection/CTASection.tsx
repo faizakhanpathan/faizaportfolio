@@ -36,7 +36,7 @@ export default function CTASection() {
             <NavLink to="/contact" className="btn btn-white cta-btn-primary">
               Start a Project <FaArrowRight />
             </NavLink>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="btn cta-btn-outline">
+            <a href="https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="btn cta-btn-outline">
               <FaInstagram /> Follow on Instagram
             </a>
           </div>

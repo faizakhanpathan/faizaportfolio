@@ -109,13 +109,13 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <span className="hero__social-label">Follow me on</span>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="Instagram">
+            <a href="https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="YouTube">
+            <a href="https://youtube.com/@lifewithfaiza1?si=kU2Ico3SWREICfbe" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="YouTube">
               <FaYoutube />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="LinkedIn">
+            <a href="https://in.linkedin.com/in/faiza-khan-b61639359" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="LinkedIn">
               <FaLinkedinIn />
             </a>
           </motion.div>
@@ -155,7 +155,7 @@ export default function HeroSection() {
 
             {/* Play reel button */}
             <motion.a
-              href="https://youtube.com"
+              href="https://youtube.com/@lifewithfaiza1?si=kU2Ico3SWREICfbe"
               target="_blank"
               rel="noreferrer"
               className="hero__play-btn"

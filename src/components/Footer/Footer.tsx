@@ -28,13 +28,13 @@ export default function Footer() {
               Transforming brands through strategic SEO and authentic content creation. Let's build something remarkable together.
             </p>
             <div className="footer__socials">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="footer__social" aria-label="Instagram">
+              <a href="https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="footer__social" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="footer__social" aria-label="YouTube">
+              <a href="https://youtube.com/@lifewithfaiza1?si=kU2Ico3SWREICfbe" target="_blank" rel="noreferrer" className="footer__social" aria-label="YouTube">
                 <FaYoutube />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer__social" aria-label="LinkedIn">
+              <a href="https://in.linkedin.com/in/faiza-khan-b61639359" target="_blank" rel="noreferrer" className="footer__social" aria-label="LinkedIn">
                 <FaLinkedinIn />
               </a>
               <a href="mailto:faiza@example.com" className="footer__social" aria-label="Email">

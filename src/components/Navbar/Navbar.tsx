@@ -63,13 +63,13 @@ export default function Navbar() {
         {/* Social + CTA */}
         <div className="navbar__actions">
           <div className="navbar__socials">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="navbar__social-icon" aria-label="Instagram">
+            <a href="https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="navbar__social-icon" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="navbar__social-icon" aria-label="YouTube">
+            <a href="https://youtube.com/@lifewithfaiza1?si=kU2Ico3SWREICfbe" target="_blank" rel="noreferrer" className="navbar__social-icon" aria-label="YouTube">
               <FaYoutube />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="navbar__social-icon" aria-label="LinkedIn">
+            <a href="https://in.linkedin.com/in/faiza-khan-b61639359" target="_blank" rel="noreferrer" className="navbar__social-icon" aria-label="LinkedIn">
               <FaLinkedinIn />
             </a>
           </div>
@@ -121,9 +121,9 @@ export default function Navbar() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
               >
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
-                <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
+                <a href="https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
+                <a href="https://youtube.com/@lifewithfaiza1?si=kU2Ico3SWREICfbe" target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
+                <a href="https://in.linkedin.com/in/faiza-khan-b61639359" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
               </motion.div>
             </nav>
           </motion.div>

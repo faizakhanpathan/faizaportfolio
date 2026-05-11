@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { FaInstagram, FaYoutube, FaUsers, FaHandshake } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaLinkedinIn, FaHandshake } from 'react-icons/fa';
 import CountUpPkg from 'react-countup';
 const CountUp = (CountUpPkg as any).default || CountUpPkg;
 
@@ -11,32 +11,32 @@ const presenceCards = [
   {
     icon: <FaInstagram />,
     platform: 'Instagram',
-    handle: '@faizakhanpathan',
+    handle: '@faiiiizzzaaaa',
     stat: '50000',
     statLabel: 'Followers',
     desc: 'Lifestyle, SEO tips, and behind-the-scenes content creation journey.',
     gradient: 'linear-gradient(135deg, #f9a8c9, #ff9dc7)',
-    link: 'https://instagram.com',
+    link: 'https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr',
   },
   {
     icon: <FaYoutube />,
     platform: 'YouTube',
-    handle: 'Faiza Khan Pathan',
+    handle: '@lifewithfaiza1',
     stat: '25000',
     statLabel: 'Subscribers',
     desc: 'Educational SEO tutorials, content strategy guides, and creator vlogs.',
     gradient: 'linear-gradient(135deg, #ffbf8a, #ffa05c)',
-    link: 'https://youtube.com',
+    link: 'https://youtube.com/@lifewithfaiza1?si=kU2Ico3SWREICfbe',
   },
   {
-    icon: <FaUsers />,
-    platform: 'Audience Reach',
-    handle: 'Multi-platform',
-    stat: '100000',
-    statLabel: 'Combined Reach',
-    desc: 'Building engaged communities across digital platforms with authentic content.',
-    gradient: 'linear-gradient(135deg, #ff9dc7, #ffbf8a)',
-    link: '#',
+    icon: <FaLinkedinIn />,
+    platform: 'LinkedIn',
+    handle: 'Faiza Khan',
+    stat: '500',
+    statLabel: 'Connections',
+    desc: 'Professional networking, SEO expertise, and industry insights.',
+    gradient: 'linear-gradient(135deg, #8ad4ff, #4da6ff)',
+    link: 'https://in.linkedin.com/in/faiza-khan-b61639359',
   },
   {
     icon: <FaHandshake />,
