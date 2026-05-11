@@ -136,7 +136,7 @@
 .about-badge--2 { top: 50%; right: -20px; animation-delay: 1.5s; }
 .about-badge--3 { bottom: 60px; left: -20px; animation-delay: 3s; }
 
-.about-badge span { font-size: 1rem; }
+.about-badge svg { font-size: 1.1rem; color: var(--pink-500); }
 
 @keyframes badgeFloat {
   0%, 100% { transform: translateY(0); }

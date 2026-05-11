@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaHeart, FaRocket, FaStar, FaLeaf } from 'react-icons/fa';
+import { FaHeart, FaRocket, FaStar, FaLeaf, FaChartBar, FaUsers, FaChartLine, FaLightbulb, FaEnvelope, FaTrophy, FaMobileAlt, FaAward } from 'react-icons/fa';
 import { useScrollReveal, fadeUp, slideLeft, slideRight, staggerContainer } from '../hooks/useScrollReveal';
 import CTASection from '../components/sections/CTASection/CTASection';
 import './About.css';
@@ -44,10 +44,10 @@ const timeline = [
 ];
 
 const values = [
-  { icon: '🎯', title: 'Results-First', desc: 'Every strategy is driven by measurable outcomes and data insights.' },
-  { icon: '🌸', title: 'Authentic Voice', desc: 'Building genuine connections between brands and their audiences.' },
-  { icon: '⚡', title: 'Continuous Growth', desc: 'Always learning, adapting, and staying ahead of digital trends.' },
-  { icon: '💡', title: 'Creative Thinking', desc: 'Combining creativity with analytics for powerful content strategies.' },
+  { icon: <FaChartBar />, title: 'Results-First', desc: 'Every strategy is driven by measurable outcomes and data insights.' },
+  { icon: <FaUsers />, title: 'Authentic Voice', desc: 'Building genuine connections between brands and their audiences.' },
+  { icon: <FaChartLine />, title: 'Continuous Growth', desc: 'Always learning, adapting, and staying ahead of digital trends.' },
+  { icon: <FaLightbulb />, title: 'Creative Thinking', desc: 'Combining creativity with analytics for powerful content strategies.' },
 ];
 
 export default function About() {
@@ -86,7 +86,7 @@ export default function About() {
                 When I'm not optimizing websites or crafting content calendars, you'll find me creating educational reels on Instagram, filming YouTube tutorials, or collaborating with inspiring brands on meaningful campaigns.
               </p>
               <div className="about-hero__mission">
-                <div className="about-hero__mission-icon">💌</div>
+                <div className="about-hero__mission-icon"><FaEnvelope /></div>
                 <blockquote className="about-hero__mission-text">
                   "My mission is to empower brands and creators to show up authentically in the digital world — and let their story be found."
                 </blockquote>
@@ -101,13 +101,13 @@ export default function About() {
                 </div>
                 <div className="about-hero__decorations">
                   <div className="about-badge about-badge--1">
-                    <span>🏆</span> Top SEO Specialist
+                    <FaTrophy /> Top SEO Specialist
                   </div>
                   <div className="about-badge about-badge--2">
-                    <span>📱</span> 100K+ Reach
+                    <FaMobileAlt /> 100K+ Reach
                   </div>
                   <div className="about-badge about-badge--3">
-                    <span>⭐</span> 5+ Years Exp.
+                    <FaAward /> 5+ Years Exp.
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function About() {
   );
 }
 
-function ValueCard({ icon, title, desc, delay }: { icon: string; title: string; desc: string; delay: number }) {
+function ValueCard({ icon, title, desc, delay }: { icon: React.ReactNode; title: string; desc: string; delay: number }) {
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
