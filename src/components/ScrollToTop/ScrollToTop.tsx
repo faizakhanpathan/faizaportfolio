@@ -1,10 +1,17 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronUp } from 'react-icons/fa';
 import './ScrollToTop.css';
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const { pathname } = useLocation();
+
+  // Scroll to top on navigation
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const toggle = () => setVisible(window.scrollY > 400);
