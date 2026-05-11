@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { FaSearch, FaPen, FaInstagram, FaYoutube, FaBullhorn, FaUser } from 'react-icons/fa';
 import { useScrollReveal, fadeUp, staggerContainer } from '../../../hooks/useScrollReveal';
@@ -104,12 +105,16 @@ function ServiceCard({ icon, title, desc, color, number }: any) {
       <h3 className="service-card__title" style={{ transform: 'translateZ(20px)' }}>{title}</h3>
       <p className="service-card__desc" style={{ transform: 'translateZ(10px)' }}>{desc}</p>
       
-      <div className="service-card__footer" style={{ transform: 'translateZ(15px)' }}>
+      <Link 
+        to="/experience" 
+        className="service-card__footer" 
+        style={{ transform: 'translateZ(15px)', textDecoration: 'none', display: 'block' }}
+      >
         <div className="service-card__arrow">
           <span>Explore Service</span>
           <div className="arrow-icon">→</div>
         </div>
-      </div>
+      </Link>
 
       <div className="service-card__glow" />
     </motion.div>
