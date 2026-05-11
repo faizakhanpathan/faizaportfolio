@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHeart, FaRocket, FaStar, FaLeaf } from 'react-icons/fa';
 import { useScrollReveal, fadeUp, slideLeft, slideRight, staggerContainer } from '../hooks/useScrollReveal';
@@ -158,33 +159,62 @@ export default function About() {
 
       {/* Values */}
       <section className="about-values section" id="values">
-        <div className="container">
-          <motion.div
-            ref={valuesReveal.ref}
-            initial="hidden"
-            animate={valuesReveal.controls}
-            variants={staggerContainer}
-          >
-            <motion.div className="section-header" variants={fadeUp}>
+        {/* Decorative Background Elements */}
+        <div className="values-bg-decor">
+          <div className="values-blob values-blob--1" />
+          <div className="values-blob values-blob--2" />
+        </div>
+
+          <div className="container" style={{ position: 'relative', zIndex: 5 }}>
+            <motion.div 
+              className="section-header"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               <span className="section-tag">✦ Core Values</span>
               <h2 className="section-title">What Drives <span className="gradient-text">Everything I Do</span></h2>
               <div className="section-divider" />
             </motion.div>
 
-            <motion.div className="values-grid" variants={staggerContainer}>
-              {values.map(({ icon, title, desc }) => (
-                <motion.div key={title} className="value-card glass-card" variants={fadeUp} whileHover={{ y: -6 }}>
-                  <span className="value-card__icon">{icon}</span>
-                  <h3 className="value-card__title">{title}</h3>
-                  <p className="value-card__desc">{desc}</p>
-                </motion.div>
+            <div className="values-grid">
+              {values.map((val, idx) => (
+                <ValueCard key={val.title} {...val} delay={idx * 0.1} />
               ))}
-            </motion.div>
-          </motion.div>
-        </div>
+            </div>
+          </div>
       </section>
 
       <CTASection />
     </div>
+  );
+}
+
+function ValueCard({ icon, title, desc, delay }: { icon: string; title: string; desc: string; delay: number }) {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+    e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+  };
+
+  return (
+    <motion.div 
+      className="value-card glass-card" 
+      onMouseMove={handleMouseMove}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay }}
+    >
+      <div className="value-card__icon-wrap">
+        <span className="value-card__icon">{icon}</span>
+      </div>
+      <h3 className="value-card__title">{title}</h3>
+      <p className="value-card__desc">{desc}</p>
+      <div className="value-card__glow" />
+    </motion.div>
   );
 }
