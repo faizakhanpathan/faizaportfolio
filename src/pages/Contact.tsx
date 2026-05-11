@@ -16,7 +16,7 @@ const contactInfo = [
   {
     icon: <FaMapMarkerAlt />,
     title: 'Location',
-    value: 'Karachi, Pakistan',
+    value: 'Udaipur, Rajasthan, India',
     desc: 'Available for remote & local work worldwide',
     color: '#ffbf8a',
   },
@@ -237,7 +237,7 @@ export default function Contact() {
               <div className="contact-map glass-card">
                 <div className="contact-map__inner">
                   <div className="contact-map__pin">📍</div>
-                  <h4>Karachi, Pakistan</h4>
+                  <h4>Udaipur, Rajasthan, India</h4>
                   <p>Available for remote collaboration globally</p>
                   <div className="contact-map__grid">
                     {Array.from({ length: 25 }).map((_, i) => (

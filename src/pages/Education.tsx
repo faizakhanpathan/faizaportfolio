@@ -114,7 +114,7 @@ const courses = [
 ];
 
 const workshops = [
-  { title: 'Digital Marketing Summit 2024', org: 'DigiSummit Pakistan', icon: '🎤' },
+  { title: 'Digital Marketing Summit 2024', org: 'DigiSummit India', icon: '🎤' },
   { title: 'Creator Economy Workshop', org: 'Social Media Week', icon: '🚀' },
   { title: 'SEO Bootcamp - Advanced', org: 'Moz Academy', icon: '🔧' },
   { title: 'Personal Branding Masterclass', org: 'BrandFest Online', icon: '💡' },

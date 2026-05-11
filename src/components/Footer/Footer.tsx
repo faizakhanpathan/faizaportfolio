@@ -72,7 +72,7 @@ export default function Footer() {
             <h4 className="footer__col-title">Get In Touch</h4>
             <div className="footer__contact-info">
               <p><span>📧</span> faiza@example.com</p>
-              <p><span>📍</span> Pakistan</p>
+              <p><span>📍</span> Udaipur, Rajasthan, India</p>
               <p><span>💼</span> Available for Freelance</p>
             </div>
             <NavLink to="/contact" className="btn btn-primary footer__cta">

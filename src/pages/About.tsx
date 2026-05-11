@@ -77,7 +77,7 @@ export default function About() {
               </h1>
               <div className="section-divider left" style={{ marginBottom: '24px' }} />
               <p className="about-hero__lead">
-                I'm Faiza Khan Pathan — an SEO Specialist, Content Creator, and Social Media Strategist based in Pakistan. My journey began with a simple curiosity about how people discover content online, which evolved into a deep passion for organic growth and digital storytelling.
+                I'm Faiza Khan Pathan — an SEO Specialist, Content Creator, and Social Media Strategist based in Udaipur, Rajasthan, India. My journey began with a simple curiosity about how people discover content online, which evolved into a deep passion for organic growth and digital storytelling.
               </p>
               <p className="about-hero__body">
                 With over 5 years of hands-on experience, I've helped businesses and creators transform their digital presence through data-driven SEO strategies and compelling content. I believe that the best marketing doesn't feel like marketing — it tells a story that resonates.
