@@ -43,12 +43,26 @@
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 2px;
+}
+
+.footer__logo-text {
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 16px;
-  display: inline-block;
 }
 
 .footer__logo span {

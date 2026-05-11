@@ -42,6 +42,7 @@ export default function Navbar() {
       <div className="navbar__container container">
         {/* Logo */}
         <NavLink to="/" className="navbar__logo">
+          <img src="/favicon.png" alt="Faiza Khan Logo" className="navbar__logo-img" />
           <span className="navbar__logo-text">Faiza</span>
           <span className="navbar__logo-dot">.</span>
         </NavLink>

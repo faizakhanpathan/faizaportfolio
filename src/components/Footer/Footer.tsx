@@ -23,7 +23,10 @@ export default function Footer() {
         <div className="footer__grid">
           {/* Brand */}
           <div className="footer__brand">
-            <div className="footer__logo">Faiza<span>.</span></div>
+            <div className="footer__logo">
+              <img src="/favicon.png" alt="Faiza Khan Logo" className="footer__logo-img" />
+              <span className="footer__logo-text">Faiza</span><span>.</span>
+            </div>
             <p className="footer__tagline">
               Transforming brands through strategic SEO and authentic content creation. Let's build something remarkable together.
             </p>
