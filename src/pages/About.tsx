@@ -37,7 +37,7 @@ const timeline = [
   {
     year: '2023-Present',
     title: 'Full-Scale Agency',
-    desc: 'Expanded to full social media management and content strategy for 50+ clients across e-commerce, lifestyle, and tech niches.',
+    desc: 'Expanded to full social media management and content strategy for 10+ clients across e-commerce, lifestyle, and tech niches.',
     icon: <FaRocket />,
     color: '#f9a8c9',
   },
@@ -79,7 +79,7 @@ export default function About() {
                 I'm Faiza Khan Pathan — an SEO Specialist, Content Creator, and Social Media Strategist based in Udaipur, Rajasthan, India. My journey began with a simple curiosity about how people discover content online, which evolved into a deep passion for organic growth and digital storytelling.
               </p>
               <p className="about-hero__body">
-                With over 5 years of hands-on experience, I've helped businesses and creators transform their digital presence through data-driven SEO strategies and compelling content. I believe that the best marketing doesn't feel like marketing — it tells a story that resonates.
+                With over 1 year of hands-on experience, I've helped businesses and creators transform their digital presence through data-driven SEO strategies and compelling content. I believe that the best marketing doesn't feel like marketing — it tells a story that resonates.
               </p>
               <p className="about-hero__body">
                 When I'm not optimizing websites or crafting content calendars, you'll find me creating educational reels on Instagram, filming YouTube tutorials, or collaborating with inspiring brands on meaningful campaigns.
@@ -106,7 +106,7 @@ export default function About() {
                     <FaMobileAlt /> 100K+ Reach
                   </div>
                   <div className="about-badge about-badge--3">
-                    <FaAward /> 5+ Years Exp.
+                    <FaAward /> 1+ Year Exp.
                   </div>
                 </div>
               </div>

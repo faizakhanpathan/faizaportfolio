@@ -72,9 +72,9 @@ export default function SkillsSection() {
               {/* Highlights */}
               <div className="skills-highlights">
                 {[
-                  { value: '5+', label: 'Years Experience' },
-                  { value: '150+', label: 'Projects Done' },
-                  { value: '50+', label: 'Happy Clients' },
+                  { value: '1+', label: 'Year Experience' },
+                  { value: '30+', label: 'Projects Done' },
+                  { value: '10+', label: 'Happy Clients' },
                 ].map(({ value, label }) => (
                   <div key={label} className="skills-highlight">
                     <span className="skills-highlight__value gradient-text">{value}</span>
