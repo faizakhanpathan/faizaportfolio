@@ -53,7 +53,6 @@ const values = [
 export default function About() {
   const heroReveal = useScrollReveal(0.1);
   const timelineReveal = useScrollReveal(0.1);
-  const valuesReveal = useScrollReveal(0.1);
 
   return (
     <div className="page-wrapper about-page">

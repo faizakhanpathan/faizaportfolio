@@ -4,7 +4,7 @@ import CountUpPkg from 'react-countup';
 const CountUp = (CountUpPkg as any).default || CountUpPkg;
 
 import { useInView } from 'react-intersection-observer';
-import { useScrollReveal, fadeUp, staggerContainer } from '../../../hooks/useScrollReveal';
+import { fadeUp, staggerContainer } from '../../../hooks/useScrollReveal';
 import './SocialPresenceSection.css';
 
 const presenceCards = [
