@@ -103,7 +103,7 @@ export default function About() {
                     <FaTrophy /> Top SEO Specialist
                   </div>
                   <div className="about-badge about-badge--2">
-                    <FaMobileAlt /> 100K+ Reach
+                    <FaMobileAlt /> 2.5K+ Reach
                   </div>
                   <div className="about-badge about-badge--3">
                     <FaAward /> 1+ Year Exp.

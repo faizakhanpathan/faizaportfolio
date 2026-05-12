@@ -16,7 +16,7 @@ const experiences = [
     icon: <FaSearch />,
     color: '#f9a8c9',
     achievements: [
-      'Managed SEO for 20+ clients, delivering avg. 280% organic traffic growth',
+      'Managed SEO for 10+ clients, delivering avg. 280% organic traffic growth',
       'Developed content strategies resulting in top 3 Google rankings',
       'Created editorial calendars and managed content teams',
       'Increased client e-commerce revenue by avg. 45% through SEO',
@@ -30,8 +30,8 @@ const experiences = [
     icon: <FaInstagram />,
     color: '#ff9dc7',
     achievements: [
-      'Grew Instagram following from 0 to 50K+ organically in 12 months',
-      'Secured 15+ brand collaborations with lifestyle and beauty brands',
+      'Grew Instagram following from 0 to 1.8K+ organically in 12 months',
+      'Secured 10+ brand collaborations with lifestyle and beauty brands',
       'Developed reels strategy resulting in 1M+ combined reel views',
       'Maintained 8.5% average engagement rate across all content',
     ],
@@ -44,7 +44,7 @@ const experiences = [
     icon: <FaYoutube />,
     color: '#ffbf8a',
     achievements: [
-      'Built YouTube channel to 25K subscribers with educational SEO content',
+      'Built YouTube channel to 850 subscribers with educational SEO content',
       'Produced 100+ tutorial videos on SEO, content creation, and digital marketing',
       'Achieved 500K+ total video views through strategic YouTube SEO',
       'Launched series on "SEO for Beginners" with 50K+ views per episode',
@@ -72,7 +72,7 @@ const experiences = [
     icon: <FaHandshake />,
     color: '#f9a8c9',
     achievements: [
-      'Collaborated with 30+ brands for product reviews and sponsored content',
+      'Collaborated with 10+ brands for product reviews and sponsored content',
       'Built authentic audience trust through transparent content creation',
       'Negotiated brand deals and managed influencer agreements',
       'Created compelling product storytelling campaigns',
@@ -81,10 +81,10 @@ const experiences = [
 ];
 
 const counters = [
-  { value: 150, suffix: '+', label: 'Projects Completed', icon: '📁' },
-  { value: 50, suffix: '+', label: 'Clients Worked With', icon: '🤝' },
-  { value: 100000, suffix: '+', label: 'Social Reach', icon: '🌟' },
-  { value: 5, suffix: '+', label: 'Years Experience', icon: '📅' },
+  { value: 30, suffix: '+', label: 'Projects Completed', icon: '📁' },
+  { value: 10, suffix: '+', label: 'Clients Worked With', icon: '🤝' },
+  { value: 2500, suffix: '+', label: 'Social Reach', icon: '🌟' },
+  { value: 1, suffix: '+', label: 'Year Experience', icon: '📅' },
 ];
 
 function Counter({ value, suffix, label, icon }: { value: number, suffix: string, label: string, icon: string }) {
@@ -123,7 +123,7 @@ export default function Experience() {
               A Track Record of <span className="gradient-text">Real Results</span>
             </motion.h1>
             <motion.p className="section-subtitle" style={{ margin: '0 auto' }} variants={fadeUp}>
-              Five years of building brands, creating content, and driving measurable SEO growth for clients across industries.
+              One year of building brands, creating content, and driving measurable SEO growth for clients across industries.
             </motion.p>
             <div className="section-divider" style={{ margin: '20px auto 0' }} />
           </motion.div>
