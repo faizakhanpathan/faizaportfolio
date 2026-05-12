@@ -13,7 +13,7 @@ const skills = [
   { name: 'Google Analytics', level: 87, color: '#ffa05c' },
 ];
 
-const techBadges = ['Google Search Console', 'Ahrefs', 'SEMrush', 'Moz', 'Canva', 'WordPress', 'YouTube Studio', 'Meta Business Suite', 'Google Analytics 4', 'Notion', 'Trello', 'Buffer'];
+const techBadges = ['Google Search Console', 'Ahrefs', 'SEMrush', 'Moz', 'Canva', 'WordPress', 'YouTube Studio', 'Meta Business Suite', 'Google Analytics 4'];
 
 export default function SkillsSection() {
   const { ref, controls } = useScrollReveal(0.1);
