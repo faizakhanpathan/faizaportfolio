@@ -10,12 +10,6 @@ const floatingBadges = [
   { icon: '✨', label: 'Brand Strategist', delay: 0.4 },
 ];
 
-const stats = [
-  { value: '150+', label: 'Projects' },
-  { value: '50+', label: 'Clients' },
-  { value: '100K+', label: 'Audience' },
-];
-
 export default function HeroSection() {
   return (
     <section className="hero" id="hero">
@@ -89,24 +83,10 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            className="hero__stats"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-          >
-            {stats.map(({ value, label }) => (
-              <div key={label} className="hero__stat">
-                <span className="hero__stat-value gradient-text">{value}</span>
-                <span className="hero__stat-label">{label}</span>
-              </div>
-            ))}
-          </motion.div>
-
-          <motion.div
             className="hero__social"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
           >
             <span className="hero__social-label">Follow me on</span>
             <a href="https://www.instagram.com/faiiiizzzaaaa?igsh=MTZ6a3B2cTZvNjZ0Yw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="hero__social-btn" aria-label="Instagram">
